@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>我的相册</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		ul li {
+			list-style: none;
+		}
+
+		body {
+			background-color: white;
+			min-width: 1200px;
+		}
+
+		.search {
+			float: right;
+			margin-top: 10px;
+			margin-right: 200PX;
+		}
+
+		.search .sput {
+			float: left;
+			width: 182px;
+			height: 30px;
+			line-height: 16px;
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			background: #F7F7F7;
+			color: #999;
+			font-size: 12px;
+			border: none;
+		}
+
+		.search .lib {
+			float: left;
+			width: 38px;
+			height: 30px;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			background: #eee url(images/search2.png) no-repeat 12px 8px;
+			cursor: pointer;
+			border: none;
+		}
+
+		.header {
+			width: 100%;
+			height: 50px;
+			border-bottom: 1px solid #e3e3e3;
+			margin-bottom: 10px;
+		}
+
+		.header ul {
+			float: left;
+			line-height: 50px;
+			margin-left: 200px;
+		}
+
+		.header ul li {
+			float: left;
+			width: 100px;
+			margin-left: 40px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.header ul li a {
+			display: block;
+		}
+
+		.header ul li:hover a {
+			color: rgb(0, 191, 255);
+		}
+
+		.top {
+			position: relative;
+		}
+
+		.top .text {
+			position: absolute;
+			top: 150px;
+			right: 425px;
+			text-align: center;
+			font-size: 38px;
+			color: white;
+		}
+
+		.top img {
+			width: 100%;
+			height: 600px;
+		}
+
+		.footer {
+			text-align: center;
+			border-top: 1px solid rgb(218, 218, 218);
+			padding: 30px 0px;
+			color: rgb(0, 191, 255);
+			font-weight: bold;
+			background-color: rgb(244, 244, 244)
+		}
+
+		.nav {
+			position: relative;
+		}
+
+		.navtwo {
+			background-color: rgb(255 255 255);
+			height: 100px;
+			opacity: 0;
+			width: 100px;
+			left: 0;
+			z-index: 9999999;
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			transition: 0.5;
+		}
+
+		.header ul li:hover .navtwo {
+			opacity: 1;
+		}
+
+		.navtwo a:hover {
+			color: white !important;
+			background-color: rgb(0, 191, 255);
+		}
+
+		.conent {
+			width: 1200px;
+			height: 1800px;
+			margin: 20px auto;
+
+		}
+
+		.conent h3 {
+			color: rgb(0, 191, 255);
+			text-align: center;
+			margin-bottom: 50px;
+			margin-top: 50px;
+		}
+
+		.conent .imgbox {
+			width: 1200px;
+		}
+
+		.conent .imgbox li {
+			margin: 50px;
+			width: 500px;
+			height: 400px;
+			float: left;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.conent .imgbox li .imgtext {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: 0.5s;
+			background-color: #afafafa6;
+		}
+
+		.imgtext span {
+			width: 150px;
+			height: 150px;
+			margin: 125px auto;
+			line-height: 150px;
+			background-color: white;
+			text-align: center;
+			font-size: 32px;
+			font-weight: bold;
+			border-radius: 100%;
+			color: rgb(0, 191, 255);
+			display: block;
+		}
+
+		.conent #img {
+			width: 100%;
+			height: 100%;
+			transition: 0.5s;
+		}
+
+		.conent .imgbox li:hover #img {
+			transform: scale(1.2);
+		}
+
+		.conent .imgbox li:hover .imgtext {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="header">
+		<ul>
+			<li><a href="index.html">个人简介</a></li>
+			<li><a href="page1.html" style=" color: rgb(0, 191, 255);">我的相册</a></li>
+			<li><a href="page2.html">我的活动</a></li>
+			<li class="nav"><a href="#" class="title">立即登录</a>
+				<div class="navtwo">
+					<a href="page4.html">登录</a>
+					<a href="page4.html">注册</a>
+				</div>
+			</li>
+		</ul>
+		<div class="search">
+			<input type="text" class="sput" value="搜索">
+			<input type="submit" class="lib" value="">
+		</div>
+	</div>
+	<div class="top">
+		<img src="images/6b9a410a3167f27102de68e09992f767.jpg" alt="">
+		<div class="text">
+			<h1>WELCOME</h1>
+			<h1>TO MY PHOTOGRAPH</h1>
+		</div>
+	</div>
+	<div class="conent">
+		<h3> 欢迎来到我的相册</h3>
+		<ul class="imgbox">
+			<li>
+				<img src="images/人文.jpg" alt="" id="img">
+				<div class="imgtext">
+					<span>人文</span>
+				</div>
+			</li>
+			<li>
+				<img src="images/旅游1.jpg" alt="" id="img">
+				<div class="imgtext">
+					<span>旅游</span>
+				</div>
+			</li>
+			<li>
+				<img src="images/扫街.jpg" alt="" id="img">
+				<div class="imgtext">
+					<span>扫街</span>
+				</div>
+			</li>
+			<li>
+				<img src="images/活动.jpg" alt="" id="img">
+				<div class="imgtext">
+					<span>活动</span>
+				</div>
+			</li>
+			<li>
+				<img src="images/风.jpg" alt="" id="img">
+				<div class="imgtext">
+					<span>风光</span>
+				</div>
+			</li>
+			<li>
+				<img src="images/运.jpg" alt="" id="img">
+				<div class="imgtext">
+					<span>运动</span>
+				</div>
+			</li>
+		</ul>
+		<div id=demo style="overflow:hidden;width:1200px; margin-bottom:80px;margin-top:30px;">
+			<table border=0 align=left cellpadding=0 cellspacing="0" cellspace=0>
+				<tr>
+					<td valign=top id=demo1>
+						<table width="1200" border="0" cellspacing="5" cellpadding="0">
+							<tr>
+								<td>
+									<a href="#"><img src="images/人文.jpg"
+											style="width:300px; height:200px; margin-left:10px;"></a>
+								</td>
+								<td>
+									<a href="#"><img src="images/扫街.jpg"
+											style="width:300px; height:200px; margin-left:10px;"></a>
+								</td>
+								<td>
+									<a href="#"><img src="images/旅游1.jpg"
+											style="width:300px; height:200px; margin-left:10px;"></a>
+								</td>
+								<td>
+									<a href="#"><img src="images/运.jpg"
+											style="width:300px; height:200px; margin-left:10px;"></a>
+								</td>
+								<td>
+									<a href="#"><img src="images/风.jpg"
+											style="width:300px; height:200px; margin-left:10px;"></a>
+								</td>
+								<td>
+									<a href="#"><img src="images/摄影.jpg"
+											style="width:300px; height:200px; margin-left:10px;"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td id=demo2 valign=top></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">
+		<p>@我的个人网页版权归本人所有</p>
+	</div>
+</body>
+<script>
+</script>
+
+</html>
