@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人首页</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        body {
+            background-color: white;
+            min-width: 1200px;
+        }
+
+        .search {
+            float: right;
+            margin-top: 10px;
+            margin-right: 200PX;
+        }
+
+        .search .sput {
+            float: left;
+            width: 182px;
+            height: 30px;
+            line-height: 16px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background: #F7F7F7;
+            color: #999;
+            font-size: 12px;
+            border: none;
+        }
+
+        .search .lib {
+            float: left;
+            width: 38px;
+            height: 30px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background: #eee url(images/search2.png) no-repeat 12px 8px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #e3e3e3;
+            margin-bottom: 10px;
+        }
+
+        .header ul {
+            float: left;
+            line-height: 50px;
+            margin-left: 200px;
+        }
+
+        .header ul li {
+            float: left;
+            width: 100px;
+            margin-left: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .header ul li a {
+            display: block;
+        }
+
+        .header ul li:hover a {
+            color: rgb(0, 191, 255);
+        }
+
+        .top {
+            position: relative;
+        }
+
+        .top .text {
+            position: absolute;
+            top: 150px;
+            right: 425px;
+            text-align: center;
+            font-size: 38px;
+            color: white;
+        }
+
+        .top img {
+            width: 100%;
+            height: 550px;
+        }
+
+        .conent {
+            width: 1200px;
+            height: 400px;
+            margin: 20px auto;
+
+        }
+
+        .conent .left {
+            width: 700px;
+            margin: auto;
+        }
+
+        .conent .left img {
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            float: left;
+            margin-top: 50px;
+        }
+
+        .conent .left ul {
+            float: right;
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+
+        .conent .left ul li {
+            padding-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer {
+            text-align: center;
+            border-top: 1px solid rgb(218, 218, 218);
+            padding: 30px 0px;
+            color: rgb(0, 191, 255);
+            font-weight: bold;
+            background-color: rgb(244, 244, 244)
+        }
+
+
+
+        .conents {
+            width: 1200px;
+            height: 1300px;
+            margin: 20px auto;
+        }
+
+
+
+        .conents ul {
+            width: 1200px;
+            height: 280px;
+        }
+
+        .conents ul li {
+            float: left;
+            width: 270px;
+            height: 280px;
+            position: relative;
+            margin: 0px 15px;
+        }
+
+        .conents ul li p {
+            line-height: 20px;
+            font-size: 13px;
+            position: absolute;
+            bottom: -71px;
+            left: 0px;
+            opacity: 0;
+            transition: 0.3s;
+            width: 100%;
+            text-indent: 2em;
+            background-color: #ffffffcc;
+        }
+
+        .conents ul li:hover p {
+            opacity: 1;
+        }
+
+        .conents ul li img {
+            width: 100%;
+            height: 350px;
+        }
+
+        .conents .jieshao {
+            width: 100%;
+            height: 300px;
+            margin-top: 120px;
+        }
+
+        .conents .jieshao p {
+            line-height: 35px;
+            margin-top: 20px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .nav {
+            position: relative;
+        }
+
+        .navtwo {
+            background-color: rgb(255 255 255);
+            height: 100px;
+            opacity: 0;
+            width: 100px;
+            left: 0;
+            z-index: 9999999;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            transition: 0.5;
+        }
+
+        .header ul li:hover .navtwo {
+            opacity: 1;
+        }
+
+        .navtwo a:hover {
+            color: white !important;
+            background-color: rgb(0, 191, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <ul>
+            <li><a href="index.html" style=" color: rgb(0, 191, 255);">个人简介</a></li>
+            <li><a href="page1.html">我的相册</a></li>
+            <li><a href="page2.html">我的活动</a></li>
+            <li class="nav"><a href="#" class="title">立即登录</a>
+                <div class="navtwo">
+                    <a href="page4.html">登录</a>
+                    <a href="page4.html">注册</a>
+                </div>
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text" class="sput" value="搜索">
+            <input type="submit" class="lib" value="">
+        </div>
+    </div>
+    <div class="top">
+        <img src="./images/b43f6780dccae68d67d5797fc0be8b37.jpeg" alt="">
+        <div class="text">
+            <h1>WELCOME</h1>
+            <h1>TO MY WEBPAGE</h1>
+        </div>
+    </div>
+    <div class="conent">
+        <div class="conent">
+            <h1 style=" text-align: center;color: rgb(0, 191, 255);">个人简介</h1>
+            <div class="left">
+                <img src="./images/cef25115f2e9059e62fb4f270ef92891.jpeg" alt="">
+                <ul>
+                    <li><strong>姓名:</strong> 孙际航 </li>
+                    <li><strong> 专业：</strong> 数字媒体艺术 </li>
+                    <li><strong> 学校：</strong> 北京工商大学 </li>
+                    <li><strong> 爱好：</strong> 摄影、运动、旅游、画画</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="conents">
+        <h1 style="text-align: center;color: rgb(0, 191, 255);margin-bottom: 35px;">我的爱好</h1>
+        <audio autoplay="true" controls="controls" loop="loop" preload="auto" src="images/BGM.mp3"
+            style="margin: auto;">
+        </audio>
+        <ul>
+            <li>
+                <img src="images/摄影.jpg" alt="">
+                <p>摄影
+                </p>
+            </li>
+            <li>
+                <img src="images/运动.jpg" alt="">
+                <p>运动
+                </p>
+            </li>
+            <li>
+                <img src="images/旅游.jpg" alt="">
+                <p>旅游
+                </p>
+            </li>
+            <li>
+                <img src="images/画画.jpg" alt="">
+                <p>画画
+                </p>
+            </li>
+        </ul>
+        <div style="clear: both;"></div>
+        <div class="jieshao">
+            <h1 style="text-align: center;color: rgb(0, 191, 255);margin-bottom: 35px;">自我介绍</h1>
+            <p>
+                我的爱好广泛！我热爱摄影，因为镜头能定格世间的美好，将稍纵即逝的瞬间化作永恒的风景。无论是壮丽的山河湖海，还是街头巷尾的烟火人情，都是我想捕捉的画面。我喜爱运动，篮球场上拼搏的快感、徒步穿越山林的自由、健身房挥洒汗水的畅快，都让我充满活力与能量！我热衷于旅游，探索未知的土地、感受不同的文化、遇见形形色色的故事，每一次出发都像打开一本活的书，拓展视野，丰富心灵。我痴迷于画画，无论是拿起画笔在纸上勾勒天马行空的想象，还是用平板描绘精心构思的插画，都让我沉浸在创造的宁静和喜悦之中，它是我与世界沟通的另一种美妙语言。我喜欢结交志同道合的朋友，分享彼此的见闻与乐趣。人生旅途漫漫，在路上遇见美好、感受激情、创造价值，就是我最珍视的财富！
+            </p>
+        </div>
+        <div class="banner">
+            <img src="images/banner1.jpg" alt="" id="imgbener">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>@我的个人网页版权归本人所有</p>
+    </div>
+</body>
+<script>
+    
+</script>
+
+</html>
