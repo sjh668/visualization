@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活动详情</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        body {
+            background-color: white;
+            min-width: 1200px;
+        }
+
+        .search {
+            float: right;
+            margin-top: 10px;
+            margin-right: 200PX;
+        }
+
+        .search .sput {
+            float: left;
+            width: 182px;
+            height: 30px;
+            line-height: 16px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background: #F7F7F7;
+            color: #999;
+            font-size: 12px;
+            border: none;
+        }
+
+        .search .lib {
+            float: left;
+            width: 38px;
+            height: 30px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background: #eee url(images/search2.png) no-repeat 12px 8px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #e3e3e3;
+            margin-bottom: 10px;
+        }
+
+        .header ul {
+            float: left;
+            line-height: 50px;
+            margin-left: 200px;
+        }
+
+        .header ul li {
+            float: left;
+            width: 100px;
+            margin-left: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .header ul li a {
+            display: block;
+        }
+
+        .header ul li:hover a {
+            color: rgb(0, 191, 255);
+        }
+
+        .top {
+            position: relative;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top .text {
+            position: absolute;
+            top: 150px;
+            right: 425px;
+            text-align: center;
+            font-size: 38px;
+            color: white;
+        }
+
+        .top video {
+            width: 1200px;
+            height: 600px;
+        }
+
+        .footer {
+            text-align: center;
+            border-top: 1px solid rgb(218, 218, 218);
+            padding: 30px 0px;
+            color: rgb(0, 191, 255);
+            font-weight: bold;
+            background-color: rgb(244, 244, 244)
+        }
+
+        .nav {
+            position: relative;
+        }
+
+        .navtwo {
+            background-color: rgb(255 255 255);
+            height: 100px;
+            opacity: 0;
+            width: 100px;
+            left: 0;
+            z-index: 9999999;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            transition: 0.5;
+        }
+
+        .header ul li:hover .navtwo {
+            opacity: 1;
+        }
+
+        .navtwo a:hover {
+            color: white !important;
+            background-color: rgb(0, 191, 255);
+        }
+
+        .conent {
+            width: 1200px;
+            height: 3200px;
+            margin: 20px auto;
+
+        }
+
+        .conent .title {
+            text-align: center;
+            padding: 32px 40px 35px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .conent .title h1 {
+            line-height: 34px;
+            position: relative;
+            font-size: 24px;
+            color: #000;
+            margin: 10px 0;
+        }
+
+        .conent .title p {
+            color: #777;
+            line-height: 28px;
+        }
+
+        .conent img {
+            width: 70%;
+            margin: auto;
+            display: block;
+        }
+
+        .conent p {
+            line-height: 3em;
+            text-align: justify;
+            text-indent: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <ul>
+            <li><a href="index.html">个人简介</a></li>
+            <li><a href="page1.html">我的相册</a></li>
+            <li><a href="page2.html">我的活动</a></li>
+            <li class="nav"><a href="#" class="title">立即登录</a>
+                <div class="navtwo">
+                    <a href="page4.html">登录</a>
+                    <a href="page4.html">注册</a>
+                </div>
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text" class="sput" value="搜索">
+            <input type="submit" class="lib" value="">
+        </div>
+    </div>
+    <div class="top">
+    </div>
+    <div class="conent">
+        <div class="title">
+            <h1>北京工商大学介绍</h1>
+            <p style="text-align: center;">发布时间： 2025-01-02 15:12:51 </p>
+        </div>
+        <img style="margin: 40px auto" alt="" src="./images/学校1.jpg" >
+        <p> 
+            <ul>
+            <li>
+              1. 简介
+              <ul>
+                <li>北京工商大学（简称北工商，BTBU）是1999年6月经教育部批准，由北京商学院（1950年建校）、北京轻工业学院（1958年建校）和机械工业管理干部学院（1982年建校）合并组建而成。</li>
+                <li>北京商学院是新中国成立后首批培养经济管理人才的高校之一，曾隶属商业部；北京轻工业学院是我国最早的轻工业高等院校。</li>
+                <li>合并后，学校从单科性大学发展为以商科、轻工、食品为特色，理、工、经、管、文、法、艺等多学科协调发展的高水平研究型大学。</li>
+              </ul>
+            </li>
+            <li>
+              2. 办学定位
+              <ul>
+                <li>学校锚定“双一流”建设目标，坚持“商科做强、工科做精、工商融合、双轮驱动”的发展思路，以数字化转型推动学科交叉融合，服务首都高质量发展。</li>
+              </ul>
+            </li>
+          </ul>
+          
+        </p>
+        <img style="margin: 40px auto" alt="" src="./images/学校2.jpg" >
+        <p>
+            <ul>
+            <li>
+              二、学科与专业优势
+              <ul>
+                <li>
+                  1. 学科体系
+                  <ul>
+                    <li>• 5大学科群：经管学科群、轻工食品学科群、数据科学与智能技术学科群、人文学科群、交叉学科群。</li>
+                    <li>• ESI全球排名：6个学科进入ESI全球前1%，其中农业科学进入前1‰。</li>
+                    <li>• 高精尖学科：应用经济学、食品科学与工程、工商管理（2019年入选北京高校高精尖学科）。</li>
+                  </ul>
+                </li>
+                <li>
+                  2. 特色专业
+                  <ul>
+                    <li>• 国家级一流专业（23个）：会计学、金融学、食品科学与工程、物流管理（全国排名第1）、化妆品技术与工程（全国第1）等。</li>
+                    <li>• 北京市级一流专业（23个）：经济统计学、法学、软件工程等。</li>
+                    <li>• 卓越农林计划：食品科学与工程、食品质量与安全。</li>
+                  </ul>
+                </li>
+                <li>
+                  三、校区与基础设施
+                  <ul>
+                    <li>• 两大校区：</li>
+                    <ul>
+                      <li>1. 阜成路校区（海淀区，21万平方米）：以研究生培养和高水平科研为主。</li>
+                      <li>2. 良乡校区（房山区，62万平方米）：主校区，承担本科教学及国际交流。</li>
+                    </ul>
+                    <li>• 科研平台：拥有2个国家级检测中心、1个国家工程研究中心、20个省部级科研平台（如北京市高精尖中心）。</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+            
+        </p>
+        <img style="margin: 40px auto" alt="" src="./images/学校3.jpg" >
+        <p>
+            <ul>
+                <li>
+                  四、师资与科研实力
+                  <ul>
+                    <li>• 师资队伍：专任教师1122人，包括中国工程院院士6人（含双聘）、国家级人才计划入选者10人。</li>
+                    <li>• 科研成果：</li>
+                    <ul>
+                      <li>· 以第一单位获国家技术发明二等奖1项、科技进步二等奖4项。</li>
+                      <li>· 近五年科研经费达2.02亿元，授权发明专利793项。</li>
+                    </ul>
+                  </ul>
+                </li>
+                <li>
+                  五、国际交流与社会声誉
+                  <ul>
+                    <li>• 国际合作：与34国87所高校合作，如爱尔兰考克大学中外合作办学项目（应用统计学、食品科学与工程）。</li>
+                    <li>• 排名与荣誉：</li>
+                    <ul>
+                      <li>· 2023年软科财经类高校第10名，校友会排名全国第136位。</li>
+                      <li>· 毕业生就业率连续多年高于北京市平均水平。</li>
+                    </ul>
+                  </ul>
+                </li>
+              </ul>
+        </p>
+       
+    </div>
+    <div class="footer">
+        <p>@我的个人网页版权归本人所有</p>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>
